@@ -1,0 +1,283 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: #344E41 !important;
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #344E41;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #F0EAD2;
+}
+.background{
+    display: flex;
+    background-image:url(./../images/vivero.png);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    border-color: #132a13;
+    border: 5px;
+}
+.background div{
+    opacity: 0,2;
+}
+.background img{
+    background-color: #ADC178;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px #132a13;
+    height: 200px;
+}
+a{
+    text-decoration: none;
+    color: #344E41;
+}
+.logo{
+    width: 45px;
+}
+.mensaje {
+    position: fixed;
+    bottom: 40px;
+    right: 5px;
+    z-index: 1;
+}
+.mensaje img{
+    width: 50px;
+}
+
+
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    background-color: #ADC178;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    padding: 9px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menu li {
+    margin: 15px;
+}
+
+.menu li a{
+    text-decoration: none;
+    color:#344E41;
+}
+
+#carritoCompra{
+    width: 20px;
+}
+
+header a{
+    place-self: center end;
+    text-decoration: none;
+    color: #344E41;
+}
+
+.index{
+    padding-top:20px;
+    display: grid;
+    background-color: #F0EAD2;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 150px 200px 300px;
+    place-content: center center;
+    grid-template-areas: 
+    "titulo slide"
+    "img slide"
+    "p p"
+    ;
+    column-gap: 5px;
+    row-gap: 10px;
+    padding: 10px;
+}
+.index h2{
+    grid-area: titulo;
+    color: #6C584C;
+    font-weight: bold;
+    place-self: center center;
+}
+.index .img {
+    grid-area: img;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
+.index .img img{
+    height: 90px;
+    width: 90px;
+    margin: 10px;
+}
+.index p {
+    grid-area: p;
+    font-size:larger;
+    margin-top: 20px;
+}
+.index .carousel{ 
+    width: 71%; 
+    grid-area: slide;
+    place-self: center center;
+    margin-top: 20px;
+    /* margin-bottom: 20px; */
+    border: 10px solid #ADC178;
+    border-radius: 5px;
+}
+.index .carousel button {
+    z-index: 0;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    background-color: #ADC178;
+    justify-content: space-between;
+    align-items: center; 
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 0;
+}
+footer p{
+    font-size: x-small;
+    margin-bottom: 0;
+}
+footer div {
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+footer a{
+    text-decoration: none;
+    color: #0d3f2a;
+}
+
+footer div a img {
+    width: 25px;
+}
+footer div a .ml {
+    width: 50px;
+}
+.logoF{
+    width: 25px;
+}
+
+.info{
+    background-color: #F0EAD2;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.informes{
+    padding-top: 20px;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 20px;
+    border: 5px solid rgb(173, 193, 120);
+    border-radius: 10px;
+    width: 95%;
+    margin: 20px;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.informes .cards{
+    width: 100%;
+    /* place-self: center center; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,400px);
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    row-gap:5px;
+    column-gap: 10px;
+}
+.cards a {
+    place-self: center center;
+    text-decoration: none;
+    padding: 0 0 0 10px;
+}
+.cards a:hover {
+    width: 120%;
+}
+.cards .card {
+    margin: 10px 10px 10px 20px;
+    width: 80%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5px 5px 5px 10px;
+    border: 5px solid #ADC178;
+    text-align: center;
+}
+.card h3 {
+    font-size: medium;
+}
+.card p {
+    font-size: small;
+}
+.card img {
+    align-self: center;
+    width: 40%;
+    margin: 5px;
+}
+
+body .btn-group{
+    position: fixed;
+    bottom: 40px;
+}
+
+body .btn-group button {
+    background-color: #ADC178; 
+    color:#344E41;
+    font-weight: 900;
+    font-size: small
+}
+
+body .btn-group button:hover{
+    background-color: #344E41; 
+    color:#ADC178;
+    font-weight: 900;
+}
+
+body .btn-group button:active{
+    background-color: #344E41; 
+    color:#ADC178;
+    font-weight: 900;
+}
