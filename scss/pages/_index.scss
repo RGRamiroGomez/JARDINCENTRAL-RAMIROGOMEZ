@@ -1,0 +1,74 @@
+.index{
+    padding-top:20px;
+    display: grid;
+    background-color: #F0EAD2;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 600px 150px 200px 300px;
+    place-content: center center;
+    grid-template-areas: 
+    "intro intro"
+    "titulo slide"
+    "img slide"
+    "p p"
+    ;
+    column-gap: 5px;
+    row-gap: 10px;
+    padding: 10px;
+    h2{
+        grid-area: titulo;
+        color: #6C584C;
+        font-weight: bold;
+        place-self: center center;
+    }
+    div{
+        grid-area: intro;
+    }
+    .img{
+        grid-area: img;
+        display: flex;
+        justify-content: space-between;
+        align-items: top;
+        img{
+            height: 90px;
+            width: 90px;
+            margin: 10px;
+        }
+    }
+    p{
+        grid-area: p;
+        font-size:larger;
+        margin-top: 20px;
+    }
+    .carousel{
+        width: 71%; 
+        grid-area: slide;
+        place-self: center center;
+        margin-top: 20px;
+        /* margin-bottom: 20px; */
+        border: 10px solid #ADC178;
+        border-radius: 5px;
+        button{
+            z-index: 0;
+        }
+    }
+    .background{
+        display: flex;
+        background-image:url(./../images/vivero.png);
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 600px;
+        border-color: #132a13;
+        border: 5px;
+        div{
+            opacity: 0,2;
+        }
+        img{
+            background-color: #ADC178;
+            border-radius: 15px;
+            box-shadow: 2px 2px 5px #132a13;
+            height: 200px;
+        }
+    }
+}

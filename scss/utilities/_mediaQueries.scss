@@ -1,0 +1,48 @@
+@media only screen and (max-width: 600px) {
+    header{
+        width: auto;
+        position: relative;
+        top: 0;
+        .menu{
+            flex-direction: column;
+        }
+    }
+    .index{
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "titulo"
+        "img"
+        "slide"
+        "p"
+        ;
+        row-gap: 5px;
+    }
+    .informes {
+        width: 70%;  
+        .cards{
+            grid-template-columns: 1fr ;
+            grid-template-rows: repeat(6,200px);
+            a {
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+            .card{
+                width: 80%;
+                height: 150px;
+                font-size: xx-small;
+                .img {
+                    width: 25px;
+                }
+            }
+            h3 {
+                font-size: x-small;
+            }
+            p {
+                font-size: x-small;
+            }
+        }  
+    }
+    .btn-group{
+        display: none;
+    }
+}

@@ -1,0 +1,35 @@
+footer{
+    width: 100%;
+    display: flex;
+    background-color: #ADC178;
+    justify-content: space-between;
+    align-items: center; 
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 0;
+    p{
+        font-size: x-small;
+        margin-bottom: 0;
+    }
+    div {
+        display: flex;
+        gap: 20px;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        a{
+            img{
+                width: 25px;
+            }
+            .ml{
+                width: 50px;
+            }
+        }
+    }
+    a{
+        text-decoration: none;
+        color: #0d3f2a;
+    }
+    .logoF{
+        width: 25px;
+    }
+}
