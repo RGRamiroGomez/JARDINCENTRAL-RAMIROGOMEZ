@@ -1,10 +1,7 @@
 footer{
+    @include flex(space-between,'',center,wrap);
     width: 100%;
-    display: flex;
-    background-color: #ADC178;
-    justify-content: space-between;
-    align-items: center; 
-    flex-wrap: wrap;
+    background-color: $colorBorders; 
     position: fixed;
     bottom: 0;
     p{
@@ -12,10 +9,9 @@ footer{
         margin-bottom: 0;
     }
     div {
-        display: flex;
+        @include flex(space-evenly,'','',wrap);
         gap: 20px;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
+        
         a{
             img{
                 width: 25px;

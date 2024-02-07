@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- conexion al css -->
-    <link rel="stylesheet" href="./../css/styles.css">
+    <link rel="stylesheet" href="./../css/main.css">
     <!-- logo de pestaña -->
     <link rel="shortcut icon" href="../images/manos-brote.svg" type="image/x-icon">
     <!-- importacion fonts -->
@@ -19,8 +19,18 @@
 <body>
     <header>
         <img class="logo"src="../images/manos-brote.svg" alt="logo JARDIN CENTRAL">
-        <nav>
+        <nav class="nav">
+            <input type="checkbox" id="nav__checkbox" class="nav__checkbox">
+            <label for="nav__checkbox" class="nav__toggle">
+                <img src="https://img.icons8.com/material-outlined/30/000000/menu--v1.png" class="hamburger" />
+                <img src="https://img.icons8.com/plumpy/30/000000/x.png" class="close" />
+            </label>
             <ul class="menu">
+                <li>
+                    <a href="#">
+                        <img src="https://img.icons8.com/ios/30/000000/marriott-hotels.png" />
+                    </a>
+                </li>
                 <li>
                     <a href="../index.html">INICIO</a>
                 </li>
@@ -31,13 +41,13 @@
                     <a href="contacto.html">CONTACTANOS</a>
                 </li>
                 <li>
-                    <a href="productos.html"><img id="carritoCompra" src="../images/cart-large-minimalistic-svgrepo-com.svg" alt="carrito de compra, ir a productos"></a>
+                    <a href="productos.html"><img id="carritoCompra" src="../images/carrito.svg" alt="carrito de compra, ir a productos"></a>
                 </li>
             </ul>
         </nav>
         <a href="../security/login.html">INGRESAR</a>
     </header>
-    <main>
+    <main class="contacto">
         <div>
             <h1>DEJANOS UN MENSAJE</h1>
             <p>Dejanos tus datos y un mensje y nosotros nos contactaremos a la brevedad</p>
@@ -63,10 +73,10 @@
             <img src="../images/instagram.svg" alt="">
         </a>
         <a href="facebook.com" target="_blank">
-            <img src="../images/facebook-svgrepo-com.svg" alt="">
+            <img src="../images/facebook-logo.svg" alt="">
         </a>
         <a href="mercadolibre.com" target="_blank">
-            <img class="mL" src="../images/mercado-libre-svgrepo-com.svg" alt="">
+            <img class="mL" src="../images/mercado-libre-logo.svg" alt="">
         </a>
         </div>
         <img class="logoF"src="../images/manos-brote.svg" alt="logo JARDIN CENTRAL">

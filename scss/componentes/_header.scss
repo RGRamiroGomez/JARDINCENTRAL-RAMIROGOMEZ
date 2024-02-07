@@ -1,27 +1,36 @@
 header{
+    @include flex(space-between,'',center,wrap);
     position: sticky;
     top: 0;
-    display: flex;
-    background-color: #ADC178;
-    justify-content: space-between;
-    align-items: center;
+    background-color: $colorBorders;
     z-index: 1;
     padding: 9px;
     .logo{
         width: 45px;
     }
-    .menu{
-        display: flex;
-        list-style: none;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        li{
-            margin: 15px;
-            a{
-                text-decoration: none;
-                color:#344E41; 
-                #carritoCompra{
-                    width: 20px;
+    .nav{
+        .nav__toggle {
+            display: none;
+        }
+        .nav__checkbox{
+            display: none;
+        }
+        .menu{
+            @include flex(space-between,'','',wrap);
+            display: flex;
+            list-style: none;
+
+            li{
+                margin: 15px;
+                a{
+                    text-decoration: none;
+                    color:$colorTxt; 
+                    #carritoCompra{
+                        width: 20px;
+                    }
+                }
+                &:first-child{
+                    display: none;
                 }
             }
         }
@@ -29,6 +38,10 @@ header{
     a{
         place-self: center end;
         text-decoration: none;
-        color: #344E41;  
+        color: $colorTxt;  
     }
+}
+
+.header-login{
+    justify-content: center;
 }

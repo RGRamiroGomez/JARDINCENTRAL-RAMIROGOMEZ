@@ -1,0 +1,23 @@
+.contacto{
+    @include flex(center,'',center,wrap);
+    background-image: url(./../images/vivero.png);
+    height: 700px;
+    div{
+        @include flex(space-evenly,column,center,wrap);
+        width: 500px;
+        height: 500px;
+        background-color: $colorBorders;
+        margin: 10px repeat(3,20px);
+        padding: 15px;
+        border-radius: 15px;
+        border-color: $colorTxt;
+        border: 5px solid;
+        .contacts{
+            @include grid(repeat(2,1fr),repeat(5,20px),5px,15px);
+            input{
+                border-radius: 10px;
+                text-align: center;
+            }
+        }
+    }
+}

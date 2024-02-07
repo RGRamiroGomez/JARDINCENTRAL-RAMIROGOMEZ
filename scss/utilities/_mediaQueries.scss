@@ -3,8 +3,50 @@
         width: auto;
         position: relative;
         top: 0;
+        .nav{
+        .nav__toggle {
+            position: absolute;
+            cursor: pointer;
+            margin: 0rem 1rem;
+            right: 0;
+            .close,
+            input[type="checkbox"] {
+                display: none;
+            }
+            .hamburger {
+                margin-top: 0.2rem;
+            }
+        }
         .menu{
+            gap: 2rem;
+            align-items: center;
+            margin: 1rem;
             flex-direction: column;
+            li {
+                list-style: none;
+                display: none;
+                &:first-child{
+                    margin-right: auto;
+                    display: block;
+                }
+                a {
+                    text-decoration: none;
+                    color: initial;
+                    font-size: 1.2rem;
+                }
+            }
+            #nav_checkbox{
+                &:checked ~ ul.nav__menu li {
+                    display: block;
+                }
+                &:checked ~ label.nav__toggle .hamburger {
+                    display: none;
+                }
+                &:checked ~ label.nav__toggle .close {
+                    display: block;
+                }
+            }
+        }
         }
     }
     .index{

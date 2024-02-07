@@ -2,18 +2,18 @@
     position: fixed;
     bottom: 40px;
     button {
-        background-color: #ADC178; 
-        color:#344E41;
+        background-color: $colorBorders; 
+        color:$colorTxt;
         font-weight: 900;
         font-size: small;
         &:hover{
-            background-color: #344E41; 
-            color:#ADC178;
+            background-color: $colorTxt; 
+            color:$colorBorders;
             font-weight: 900;
         }
         &:active{
-            background-color: #344E41; 
-            color:#ADC178;
+            background-color: $colorTxt; 
+            color:$colorBorders;
             font-weight: 900;
         }
     }

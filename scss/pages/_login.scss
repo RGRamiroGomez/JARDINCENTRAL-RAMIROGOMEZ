@@ -1,0 +1,22 @@
+.login{
+    @include flex(center,'',center,wrap);
+    background-image: url(./../images/vivero.png);
+    background-size: cover;
+    height: 600px;
+    form{
+        @include grid(repeat(2,1fr),repeat(3,25px),5px,20px);
+        width: 300px;
+        height: 120px;
+        background-color: $colorBorders;
+        padding: 20px;
+        border-radius: 15px;
+        border-color: $colorTxt;
+        border: 5px solid;
+        input{
+            border-radius: 5px;
+            border: 2px solid;
+            border-color: $colorTxt;
+            background-color: $colorBg;
+        }
+    }
+}
