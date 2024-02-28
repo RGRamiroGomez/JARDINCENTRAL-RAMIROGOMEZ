@@ -1,0 +1,32 @@
+
+main{
+    background-color: $colorBg;
+    padding: 20px;
+    h1{
+        font-size: 30px
+    }
+    p{
+        font-size: 17px
+    }
+    .products{
+        @include flex (center,column,space-between,wrap);
+        width: 50rem;
+        .product{
+            @include flex (space-between,row,center,wrap);
+            border: solid 3px $colorBorders;
+            padding: 5px;
+            row-gap: 20px;
+            width: 75rem;
+            height: 50px;
+            margin: 20px;
+            button{
+                img{
+                    width: 20px;
+                    &:hover{
+                        width: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

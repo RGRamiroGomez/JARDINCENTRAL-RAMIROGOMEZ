@@ -9,7 +9,7 @@ footer{
         margin-bottom: 0;
     }
     div {
-        @include flex(space-evenly,'','',wrap);
+        @include flex(space-evenly,'',center,wrap);
         gap: 20px;
         
         a{
